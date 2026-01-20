@@ -120,7 +120,7 @@ async function enviarMensajes() {
 }
 
 function iniciarTareasProgramadas() {
-    cron.schedule('00 22 * * *', () => {
+    cron.schedule('20 22 * * *', () => {
         console.log('⏰ Iniciando envío programado...');
         enviarMensajes();
     }, { scheduled: true, timezone: "America/Lima" });
