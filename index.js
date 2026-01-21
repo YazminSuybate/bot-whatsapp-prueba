@@ -28,7 +28,7 @@ async function generarSaludoIA(nombre) {
 
 async function generarRecordatorioPagoIA(nombre) {
     try {
-        const result = await model.generateContent(`Recordatorio corto y motivador para ${nombre}: hoy vence su mensualidad de voley. Usa emojis.`);
+        const result = await model.generateContent(`Hazle un recordatorio corto y motivador para ${nombre}: hoy vence su mensualidad de voley. Usa emojis.`);
         return result.response.text();
     } catch (e) {
         return `Hola ${nombre}, hoy vence tu mensualidad de voley 🏐.`;
